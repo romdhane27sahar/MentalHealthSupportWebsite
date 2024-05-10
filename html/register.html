@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register</title>
+	<link rel="stylesheet" href="../css/register.css">
+	<script language="javascript" async src="../js/register.js"></script>
+
+<!--<script language="javascript">
+
+	
+
+
+
+  function register(){
+
+var mail = document.getElementById("email").value;
+var passwordOne = document.getElementById("password").value;
+var passwordTwo = document.getElementById("password2").value;
+
+alert ('recuperé');
+
+	if (mail === "romdhane_sahar@yahoo.com" && passwordOne === "123456" && passwordTwo === "123456") {
+		alert('Successful Registration ');
+	
+	}
+	else{
+		alert('Verify your data !!');
+		
+	}
+}
+
+</script>
+
+-->
+
+
+
+</head>
+<body>
+	<div class="container">
+		<form id="form" class="form">
+			<em><h2>Register With Us</h2></em>
+
+
+		  <div class="form-control">
+			<label for="email">Email</label>
+			<input type="text" id="email"  placeholder="Enter email" />
+			<small>Error message</small>
+		  </div>
+		  <div class="form-control">
+			<label for="password">Password</label>
+			<input type="password" id="password" placeholder="Enter password" />
+			<small>Error message</small>
+		  </div>
+		  <div class="form-control">
+			<label for="password2">Confirm Password</label>
+			<input type="password" id="password2" placeholder="Enter password again"/>
+			<small>Error message</small>
+		  </div>
+		  <button type="submit" onclick="register()">Submit</button>
+		  
+		 <!--<button ><a href="login.html">Back to login Page </a></button>-->
+		</form>
+	  </div>
+	
+</body>
+</html>

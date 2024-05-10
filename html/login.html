@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Login page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Caramel&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/login.css" />
+  <script src="../js/login.js" defer></script>
+
+
+
+  <!--<script language="javascript">
+function login(){
+			
+			//recuperer la valeur de l'input nobre 
+
+			var email =document.getElementById("exampleInputEmail1").value;
+			var password =document.getElementById("exampleInputPassword1").value;
+
+		
+			if (email === "romdhane_sahar@yahoo.com" && password === "123") {
+				alert('ok');
+				/*window.location.href ="file:///D:/dev_web_project_final/Sahar_web_Project2/html/welcomePage.html";*/
+
+				alert('weclome page ');
+				
+				//window.location.href="../html/welcomePage.html";
+        window.location.href="https://www.google.com/";
+				
+				alert('google');
+				
+			}
+			else{
+				alert('Veuillez verifier votre login et mot de passe')
+			}
+			/*document.getElementById("res").value=resultat;//na pas marche*/
+			
+		}
+</script>
+-->
+
+</head>
+
+
+  <!--<div class="background-wrapper">
+    <img
+      src="https://assets.nflxext.com/ffe/siteui/vlv3/85e22987-d2dd-46ca-b8b7-65cd0e31c24a/629ae878-26a7-4d88-b12b-af5018a1f7b2/US-en-20201123-popsignuptwoweeks-perspective_alpha_website_large.jpg" />
+  </div>
+-->
+<!-- action="welcomePage.html" -->
+  <body>
+    <div class="container">
+      <form id="form" class="form" action="#">
+        <em><h2>Login</h2></em>
+  
+        <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter email" />
+        <small>Error message</small>
+        </div>
+        <div class="form-control">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" />
+        <small>Error message</small>
+        </div>
+      
+        <button type="submit" onclick="login()" >Submit</button>
+        <!-- <input type="button" onclick="login()" value="submit"/> w twalli matekdemch bel prevent default-->
+        <button ><a href="register.html">Register </a></button><!--w twalli tekdem bel prevent default-->
+
+        
+      </form>
+      </div>
+    
+  </body>
+
+  </html>

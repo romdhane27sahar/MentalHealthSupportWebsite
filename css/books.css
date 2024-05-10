@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+:root {
+    --main-color: #f8b281;
+    --secondary-color: #1b1b1b;
+}
+
+@font-face {
+    font-family: "argonite";
+    src: url("./assets/stone\ orgonite.woff");
+}
+
+section {
+    padding: 5%;
+}
+
+h2 {
+    font-size:100px;
+    line-height: 125%;
+    padding: 1rem 0rem;
+    font-family:'Caramel', cursive;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 125%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav svg {
+    cursor: pointer;
+    z-index: 10;
+}
+
+.links {
+    position: absolute;
+    background: white;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateX(100%);
+}
+
+.links a {
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    font-family: "argonite", sans-serif;
+}
+
+.logo img {
+    width: 1.5rem;
+}
+
+.front-page {
+    min-height: 100vh;
+    color: white;
+}
+
+.title {
+    margin-top: 25vh;
+    font-family: "argonite", sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+    text-align: center;
+}
+
+.title 
+ {
+    font-family: sans-serif;
+    text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.49);
+}
+
+.ctas {
+    margin-top: 2rem;
+}
+
+.ctas button {
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.216);
+    margin: 1rem;
+}
+
+.cta-main {
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
+
+.cta-main a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.cta-sec {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.hero {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.classes {
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: "argonite", sans-serif;
+}
+
+.title h3 {
+    font-size: 50px;
+}
+
+
+
+/*footer*/
+footer {
+
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 30px 0 10px;
+
+}
+
+
+footer p {
+    color: #8a8a8a;
+}
+
+
+
+footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-2 {
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.footer-col-2 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 140px;
+}
+.classes {
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    }
+/*end of footer */ 
+
+.magic{
+    width :185px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

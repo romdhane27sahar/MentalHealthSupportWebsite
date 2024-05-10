@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+:root {
+  --main-color: #71b9e9;
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9fafb;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center; /*align vertical au centre*/
+  justify-content: center;/*align horizontal au centre*/
+  min-height: 100vh;
+  margin: 0;
+
+  background: url("../images/background.jpg") no-repeat center fixed; 
+  background-size: cover;
+
+
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 20px rgba(8, 255, 193, 0.712);
+  width: 400px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+h2 {
+  font-size: 28px;
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color: #257df0;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative; /*on peut la supprimer*/
+}
+
+.form-control label {
+  color: #777;
+  display: block;
+  /*block : Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+/*La propriété outline est une propriété raccourcie qui permet de définir, dans une seule déclaration,
+ une ou plusieurs des propriétés parmi outline-style, outline-width et outline-color.*/
+
+.form-control.success input {/*j'en ai besoin pour js, fel ,lorsque l'input est correct , il fait appel à cette 
+  classe css en js*/
+  border-color: var(--success-color);
+}
+
+.form-control.error input {/*j'en ai besoin pour js, fel className*/
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;/*The element is positioned relative to its first positioned (not static) ancestor element*/
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {/*lorsquon a erreur , js va faire appel à la classe form-control.error qui prend 
+  la balise small d'erreur et qui est hidden et lui rend visible */
+  visibility: visible;
+}
+
+.form button {
+  cursor: pointer;
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
